@@ -1,0 +1,66 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+    <link rel ="stylesheet" type="text/css" href="Style.css" />	
+  <title>+Pesquisa</title>
+
+  
+</head><body style="color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<p style="text-align: center; background-color: rgb(0, 4, 85);"><big><big><span style="color: white;">+Pesquisa!</span><br />
+</big></big></p>
+
+<p style="text-align: center;"><big><big>Digite o que procuras e clique
+no link correspondente ao Serviço!</big></big></p>
+
+<p><br />
+<script>
+function ColocaNoLink() {
+
+var valor = document.getElementById("valor_link").value;
+document.getElementById("linkgoogle").setAttribute("href","https://www.google.com.br/webhp?hl=pt-BR&tab=nn#hl=pt-BR&sclient=psy-ab&q=" + valor);
+document.getElementById("linkmaps").setAttribute("href","https://maps.google.com.br/maps?hl=pt-BR&q=" + valor);
+document.getElementById("linkgim").setAttribute("href","https://www.google.com.br/search?q=" + valor + "&hl=pt-BR&source=lnms&tbm=isch&sa=X&ei=EYkuUfLtFo768QS88oGwCA&ved=0CAcQ_AUoAQ&biw=1024&bih=487");
+document.getElementById("Youtube").setAttribute("href","http://www.youtube.com/results?search_query="+ valor);
+document.getElementById("baixaki").setAttribute("href","http://www.baixaki.com.br/busca/Default.asp?z=1&cx=partner-pub-7019091094896260:86zzz47inzp&cof=FORID:9&sa=Pesquisar&q="+ valor);
+document.getElementById("piratebay").setAttribute("href","https://www.thepiratebay.org/search/"+ valor +"/0/99/0" );
+document.getElementById("Ig").setAttribute("href","http://busca.ig.com.br/buscar?q="+valor+"&o=IG&c=all&t=all&d=all&p=1&s=ig_content");
+document.getElementById("folha").setAttribute("href","http://search.folha.com.br/search?q="+valor+"&site=online");
+document.getElementById("uol").setAttribute("href","https://busca.uol.com.br/result.html?term="+valor);
+document.getElementById("fnet").setAttribute("href","http://www.fotolog.net/"+valor);
+document.getElementById("pstore").setAttribute("href","https://play.google.com/store/search?q="+valor);
+document.getElementById("facebook").setAttribute("href","https://www.facebook.com/search/top/?q="+valor);
+
+}	
+</script>
+</p>
+
+<form><input name="" id="valor_link" onkeyup="ColocaNoLink()" value="" type="text" /></form>
+
+<a href="" id="linkgoogle" target="blank">Google&nbsp; </a><a href="" id="linkmaps" target="blank">Google Maps&nbsp; </a><a href="file:///I:/Documents%20and%20Settings/User/Meus%20documentos/+Pesquisa.html" id="linkgim" target="blank">Google imagens&nbsp;</a><a href="" id="linkmaps" target="blank"> </a><br />
+
+<a href="" id="Youtube" target="blank">Youtube</a><br />
+
+<a href="" id="baixaki" target="blank">Baixaki</a><br />
+
+<a href="" id="piratebay" target="blank">The Pirate Bay</a><br />
+
+<a href="" id="Ig" target="blank">Ig</a><br />
+
+<a href="" id="folha" target="blank">Folha</a><br />
+
+<a href="" id="uol" target="blank">Uol Busca</a><br />
+
+
+<a href="" id="fnet" target="blank">Fotolog.Net</a><br />
+<a href="" id="pstore" target="blank">Google Play</a><br />
+<a href="" id="facebook" target="blank">Facebook</a><br />
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

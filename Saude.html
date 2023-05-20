@@ -1,0 +1,663 @@
+<html>
+    <head>
+         <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pesquisa sobre saúde</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"	
+    </head>
+    <body>
+		<header class="bg-success fixed-top">
+        <h1>Pesquisa sobre saúde</h1>
+		 <div class="input-group" >
+			<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+			<input name="consulta" id="txt_consulta" placeholder="O que você procura digite aqui!" type="text" class="form-control" />
+</div>
+		</header>
+<div class="form-group input-group">
+<table id="tabela" class="table table-hover">
+    <thead>
+        <tr>
+            <th><div>Enfermidade ou parte do corpo</div><div></div></th>
+			<th><div>Solução</div><div></div></th>
+			<th><div>Aplicação</div><div></div></th>
+           </tr>
+    </thead>
+    <tbody>
+        <tr>
+                     <td>Acne,micose</td>
+					 <td>Abacate amassado</td>
+					<td>Aplicar cataplasma sobre as pústulas durante 1h</td>	
+        </tr>
+		<tr>
+                     <td>Angina do peito</td>
+					 <td>Coalhada</td>
+					<td>Aplicar cataplasma sobre o tórax durante 2h</td>	
+        </tr>
+		<tr>
+                     <td>Anúria</td>
+					 <td>Cebola ralada e quente</td>
+					<td>Aplicar cataplasma na região da bexiga por 1h</td>	
+        </tr>
+				<tr>
+                     <td>Artrite</td>
+					 <td>Semente de linhaça cozida e gengibre</td>
+					<td>Aplicar cataplasma nas articulações por 1h</td>	
+        </tr>
+			<tr>
+                     <td>Broncopneumonia</td>
+					 <td>Semente de linhaça cozida e gengibre</td>
+					<td>Aplicar cataplasma no tórax por 1h</td>	
+        </tr>
+					<tr>
+                     <td>Catarata</td>
+					 <td>Feno grego</td>
+					<td>Aplicar cataplasma nos olhos por 1h</td>	
+        </tr>
+			<tr>
+		             <td>Cistite</td>
+					 <td>Cebola ralada e fria</td>
+					<td>Aplicar cataplasma na região da bexiga por 1h</td>	
+        </tr>
+		     <tr>
+		             <td>Furunculos</td>
+					 <td>Farinha de trigo e mel de abelhas</td>
+					<td>Aplicar cataplasma na região por 1h</td>	
+        </tr>
+		<tr>
+		             <td>Gastrite</td>
+					 <td>Cebola ralada e fria</td>
+					<td>Aplicar cataplasma na região do estomago por 2h</td>	
+        </tr>
+		<tr>
+		             <td>Hemorroidas</td>
+					 <td>Repolho macerado</td>
+					<td>Aplicar cataplasma na região anal por 2h</td>	
+        </tr>
+		<tr>
+		             <td>Hepatite</td>
+					 <td>Folhas de losna carqueja e picao cozidas e maceradas</td>
+					<td>Aplicar cataplasma na região do figado e baço por 2h</td>	
+        </tr>
+		<tr>
+		             <td>Malaria</td>
+					 <td>Folhas de losna e fel da terra cozidas e maceradas</td>
+					<td>Aplicar cataplasma na região do figado e baço por 2h</td>	
+        </tr>
+			<tr>
+		             <td>Olhos</td>
+					 <td>Alternadamente, cenoura ralada, cha de feno grego e maca ralada</td>
+					<td>Aplicar cataplasma sobre os olhos por 1h</td>	
+        </tr>
+				<tr>
+		             <td>Pneumonia</td>
+					 <td>Sementes de linhaça cozidas e gengibre quentes e Coalhada, fria</td>
+					<td>Aplicar cataplasma no torax por 1h</td>	
+        </tr>
+			<tr>
+		             <td>Prostatite</td>
+					 <td>Folhas de repolho maceradas</td>
+					<td>Aplicar cataplasma na região da prostata por 2h</td>	
+        </tr>
+				<tr>
+		             <td>Queimaduras</td>
+					 <td>Polpa de babosa ou banana assada fria </td>
+					<td>Aplicar cataplasma na região da queimadura por 10 min</td>	
+        </tr>
+		<tr>
+		             <td>Reumatismo</td>
+					 <td>Sementes de linhaca cozidas e gengibre</td>
+					<td>Aplicar cataplasma nas articulacoes 1h</td>	
+        </tr>
+		<tr>
+		             <td>Rinite</td>
+					 <td>Sementes de linhaca cozidas</td>
+					<td>Aplicar cataplasma nas regiões paranasais por 1h</td>	
+        </tr>
+			<tr>
+		             <td>Rins</td>
+					 <td>Po de carvao vegetal e sementes de linhaca cozidas</td>
+					<td>Aplicar cataplasma na região renal por 1h</td>	
+        </tr>
+			<tr>
+		             <td>Sinusite</td>
+					 <td>cebola ralada</td>
+					<td>Aplicar cataplasma nos seios nasais por 30 min</td>	
+        </tr>
+				<tr>
+		             <td>Tosse,Pleurisia</td>
+					 <td>Sementes de linhaça cozidas e gengibre quentes</td>
+					<td>Aplicar cataplasma no torax por 1h</td>	
+        </tr>
+					<tr>
+		             <td>Abscessos</td>
+					 <td>Argila, mel de abelha, polpa de babosa,carvao vegetal em po</td>
+					<td>Compressa no local</td>					
+        </tr>
+				<tr>
+		             <td>Acne</td>
+					 <td>Argila, mel de abelha, cebola ralada,arnica,cenouras raladas</td>
+					<td>Compressa no local com cebola e cenouras raladas e mel de abelhas, banhos de argila com arnica,Ingestão de argila diluida em agua</td>
+        </tr>
+			<tr>
+		             <td>Aftas,Hipércloridria</td>
+					 <td>Argila</td>
+					<td>Compressa lombo-ventral e argila diluida em agua </td>
+        </tr>
+					<tr>
+		             <td>Alergias</td>
+					 <td>Argila e arnica </td>
+					<td>Compressa lombo-ventral bochechos de argila diluida em chá de arnica</td>
+        </tr>
+			<tr>
+		             <td>Amigdalite,amidalite</td>
+					 <td>Argila e arnica </td>
+					<td>Compressa lombo-ventral  e gargarejos de argila diluida</td>
+        </tr>
+				<tr>
+		             <td>Artrite</td>
+					 <td>Argila oleo de eucalipto ,oleo de linhaca e oregano</td>
+					<td>Compressa lombo-ventral,compressa de argila com oleo de eucalipto, oleo de linhaca e oregano no torax e costas</td>
+        </tr>
+			<tr>
+		             <td>Broncopneumonia</td>
+					 <td>Argila oleo de eucalipto ,oleo de linhaca e oregano</td>
+					<td>Compressa lombo-ventral,compressa de argila com oleo de eucalipto, oleo de linhaca e oregano no torax e costas</td>
+        </tr>
+			<tr>
+		             <td>Bronquite</td>
+					 <td>Argila oleo de eucalipto ,oleo de linhaca e oregano</td>
+					<td>Compressa lombo-ventral,compressa de argila com oleo de eucalipto, oleo de linhaca e oregano no torax e costas</td>
+        </tr>
+			<tr>
+		             <td>colite,Intoxicação intestinal,ulcera gastrica</td>
+					 <td>Argila e cebola ralada</td>
+					<td>Compressa lombo-ventral com cebola ralada,ingestao de argila diluida</td>
+        </tr>
+			<tr>
+		             <td>conjutivite</td>
+					 <td>Argila,mel de abelhas,cha de camomila</td>
+					<td>Compressa local de argila com arnica macerada e oleo de eucalipto</td>
+        </tr>
+					<tr>
+		             <td>contusoes,hematomas,pancadas</td>
+					 <td>Argila,arnica,oleo de eucalipto</td>
+					<td>Compressa local de argila com arnica macerada e óleo de eucalipto</td>
+        </tr>
+			<tr>
+		             <td>Diabetes</td>
+					 <td>Argila,cebola,berinjela</td>
+					<td>Compressa lombo-ventral de argila com cebola ralada; Ingestão de argila diluída em suco de berinjela.</td> 
+			</tr>
+				<tr>
+		             <td>Difteria</td>
+					 <td>Argila,agua</td>
+					<td> Compressa lombo-ventral;  Gargarejos de argila diluída em agua.</td> 
+			</tr>
+					<tr>
+		             <td>Disturbios nervosos</td>
+					 <td>Argila,cebola</td>
+					<td> Compressa lombo-ventral de argila com cebola ralada</td> 
+			</tr>
+			<tr>
+		             <td>Pele</td>
+					 <td>Argila,arnica, cebola,cenoura,mel de abelhas</td>
+					<td> Banhos de argila com arnica; • Compressas locais de argila com cenoura e cebola raladas, e mel de abelhas;• Ingestão de argila diluída em agua.</td> 
+			</tr>
+			<tr>
+		             <td>Coracao</td>
+					 <td>Argila,alecrim</td>
+					<td> Compressa lombo-ventral; • Compressa no tórax de argila com alecrim.</td> 
+			</tr>
+				<tr>
+		             <td>Figado</td>
+					 <td>Argila,cha de camomila,carqueja,picao</td>
+					<td> Compressa lombo-ventral de argila com chá de camomila, carqueja e picão.</td> 
+			</tr>
+			<tr>
+		             <td>Vagina e doencas ginecologicas,Leucorreia,problemas menstruais</td>
+					 <td>Argila,cebola ralada</td>
+					<td> Compressa lombo-ventral de argila com cebola ralada; • Compressas locais de argila com cebola ralada.</td> 
+			</tr>
+				<tr>
+		             <td>Eczema</td>
+					 <td>Argila,arnica,cebola,cenoura,mel de abelhas</td>
+					<td> Banhos de argila com arnica; • Compressas locais de argila com cenoura e cebola raladas, e mel de abelhas; • Ingestão de argila diluída.</td> 
+			</tr>
+					<tr>
+		             <td>Enterite,Estomatite,Urticarias</td>
+					 <td>Argila,agua</td>
+					<td> Compressa lombo-ventral; • Ingestão de argila diluída.</td> 
+			</tr>
+				<tr>
+		             <td>Estresse</td>
+					 <td>Argila,cebola ralada</td>
+					<td> Compressa lombo-ventral com argila e cebola ralada.</td> 
+			</tr>
+				<tr>
+		             <td>Flebite</td>
+					 <td>Argila</td>
+					<td> Compressa lombo-ventral banhos de argila ,ingestao de argila em agua.</td> 
+			</tr>
+				<tr>
+		             <td>Frieira</td>
+					 <td>Argila,cebola,arnica.cenoura,mel de abelhas</td>
+					<td>  Banhos locais de argila com arnica; Compressas locais de argila com cenoura e cebola raladas, e mel de abelhas;</td> 
+			</tr>
+					<tr>
+		             <td>Furunculos</td>
+					 <td>Argila,cha de malva,polpa de babosa,carvao vegetal em po </td>
+					<td> Compressa local de argila com mel de abelhas, chá de malva, polpa de babosa e carvão vegetal em pó.</td> 
+			</tr>
+				<tr>
+		             <td>Gases intestinais,Gastrite</td>
+					 <td>Argila</td>
+					<td>  Compressa lombo-ventral; Ingestão de argila diluída.</td> 
+			</tr>
+				<tr>
+		             <td>Gengivite</td>
+					 <td>Argila e arnica</td>
+					<td> Compressa lombo-ventral;  Bochechos de argila diluída em chá de arnica; Pulverização local de argila em pó.</td> 
+			</tr>
+				<tr>
+		             <td>Gota</td>
+					 <td>Argila e cebola</td>
+					<td> Compressa lombo-ventral; Compressa local com argila e cebola ralada.</td> 
+			</tr>
+					<tr>
+		             <td>Mau halito</td>
+					 <td>Argila</td>
+					<td> Gargarejos com argila diluída em água.</td> 
+			</tr>
+					<tr>
+		             <td>Hemorragia uterina</td>
+					 <td>Argila e cebola</td>
+					<td>  Compressa lombo-ventral de argila com cebola ralada;Compressas locais de argila com cebola ralada.</td> 
+			</tr>
+				<tr>
+		             <td>Picada de inseto</td>
+					 <td>Argila e propolis</td>
+					<td>Compressa local de argila e propolis.</td> 
+			</tr>
+			<tr>
+		             <td>Hemorroidas</td>
+					 <td>Argila,repolho</td>
+					<td>Compressa lombo-ventral; Compressa local de argila com repolho macerado; Ingestão de argila diluída.</td> 
+			</tr>
+			<tr>
+		             <td>Insonia</td>
+					 <td>Argila</td>
+					<td> Compressa na região da nuca.</td> 
+			</tr>
+				<tr>
+		             <td>Nefrite</td>
+					 <td>Argila e cebola</td>
+					<td> Compressas locais de argila com cebola ralada</td> 
+			</tr>
+					<tr>
+		             <td>Neurastenia</td>
+					 <td>Argila e cebola</td>
+					<td> Banhos de argila com cebola ralada</td> 
+			</tr>
+					<tr>
+		             <td>Oftalmia</td>
+					 <td>Argila,mel de abelhas e cha de camomila</td>
+					<td> Compressa local de argila com mel de abelhas e chá de camomila</td> 
+			</tr>
+						<tr>
+		             <td>Pleurisia</td>
+					 <td>Argila,sementes de linhaca e gengibre</td>
+					<td> Compressa quente de argila com sementes de linhaça e gengibre, no tórax e nas costas</td> 
+			</tr>
+		<tr>
+		             <td>Queimaduras</td>
+					 <td>Argila,polpa de babosa e banana assada fria</td>
+					<td> Compressa local de argila com polpa de babosa e/ou bananas assadas (frias). Substituirá a cada 10 minutos.</td> 
+			</tr>
+					<tr>
+		             <td>Reumatismo</td>
+					 <td>Argila,cebola, oleo de linhaca</td>
+					<td> Banhos de argila com cebola ralada; Compressa local de argila com cebola ralada, gengibre e óleo de linhaça.</td> 
+			</tr>
+						<tr>
+		             <td>Varizes</td>
+					 <td>Argila e arnica</td>
+					<td>  Compressa local de argila com arnica macerada.</td> 
+			</tr>			
+				<tr>
+		             <td>Verminose</td>
+					 <td>Argila e agua de alho</td>
+					<td>Compressa lombo-ventral; Ingestão de argila diluída em água de alho.</td> 
+			</tr>
+				<tr>
+		             <td>Vomito</td>
+					 <td>Argila e agua</td>
+					<td>Ingestão de argila diluída em agua.</td> 
+			</tr>
+				<tr>
+		             <td>Pele,olhos,mucosas,garganta,cabelos quebradicos,cegueira noturna</td>
+					 <td>Vitamina A</td>
+					<td>Onde encontrar: Abobora,Abacate,Figado,Gema de ovo</td> 
+			</tr>
+							<tr>
+		             <td>inapetencia,dificuldade digestiva,dores musculares,nervos</td>
+					 <td>Vitamina B1(Tiamina)</td>
+					<td>Onde encontrar:Amendoa,Amendoim,Arroz integral,Aveia,Castanha do para,Levedo de cerveja</td> 
+			</tr>
+								<tr>
+		             <td>lesoes na lingua,mucosas da boca,ao redor do nariz,labios secos, lingua avermelhada</td>
+					 <td>Vitamina B2(Riboflavina)</td>
+					<td>Onde encontrar:Leite,melado de cana,Levedo de cerveja</td> 
+			</tr>
+<tr>
+		             <td>Animia perniciosa,perturbacoes nervosas</td>
+					 <td>Vitamina B12(Cobalamina)</td>
+					<td>Onde encontrar:Amendoa,batatas,Levedo de cerveja,Cereais integrais,Germe de trigo,Leite,Frango,Carne bovina,Hortalicas de cor verde</td> 
+			</tr>
+			<tr>
+		             <td>Predisposicao a infeccoes,Gripes,resfriados,Alergias,depressao mental,escorbuto</td>
+					 <td>Vitamina C(Acido Ascorbico)</td>
+					<td>Onde encontrar:Abacaxi,Acerola,Alface,Alho,Caju,Cebola,Espinafre,Laranja,Limao,Pimentao</td> 
+			</tr>
+						<tr>
+		             <td>Raquitismo,desenvolvimento anormal de dentes e ossos,Caries,Osteoporose,amolecimento dos ossos</td>
+					 <td>Vitamina D(D1,D2,D3)</td>
+					<td>Onde encontrar:Banhos de sol,Gema de ovo, Leite e derivados.</td> 
+			</tr>
+						<tr>
+		             <td>Abortos involuntarios,dor muscular,Esterilidade</td>
+					 <td>Vitamina E</td>
+					<td>Onde encontrar:Abacate,Alface,Amendoim(oleo),Banana,Couve,Germe de trigo,Soja.</td> 
+			</tr>
+									<tr>
+		             <td>Caspa,Debilidade geral,Dor muscular,Eczema,Seborreia,Sonolencia excessiva</td>
+					 <td>Vitamina H</td>
+					<td>Onde encontrar:Arroz integral,Aveia,Banana,Germe de trigo,Leite,Levedo de cerveja.</td> 
+			</tr>
+				<tr>
+		             <td>Hemorragia</td>
+					 <td>Vitamina K</td>
+					<td>Onde encontrar:Algas marinhas,Cebola,Cenoura,Couve,Espinafre,Iogurte natural.</td> 
+			</tr>
+					<tr>
+		             <td>Estresse,Ansiedade</td>
+					 <td>Fibras</td>
+					<td>Onde encontrar:Arroz integral,Aveia,Cevada(grao),Centeio,Ervilha,Germe de trigo,Grao de bico,Lentilha,Milho,Macarrao integral,Soja,Trigo integral.</td> 
+			</tr>
+						<tr>
+		             <td>osteoporose, hipocalcemia, raquitismo,osteomalacia</td>
+					 <td>Calcio</td>
+					<td>Onde encontrar:Leite(vaca ou cabra),Caruru,Couve,Cominho,Soja(farinha),Melado,Ovos.</td> 
+			</tr>
+					<tr>
+		             <td>Rins</td>
+					 <td>Abobora</td>
+					<td>Comer pure de abobora cozida, sem sal</td> 
+			</tr>
+						<tr>
+		             <td>Rins</td>
+					 <td>Agriao</td>
+					<td>Suco diluído em agua. Tomar 250 ml, 3 vezes ao dia.</td> 
+			</tr>
+			<tr>
+		             <td>Rins</td>
+					 <td>Beterraba</td>
+					<td>Cozinha-la e tomar o caldo do cozimento (3 xícaras ao dia)</td> 
+			</tr>
+					<tr>
+		             <td>Rins</td>
+					 <td>Dente de leao</td>
+					<td>Suco diluído em agua. Tomar 3 xícaras ao dia</td> 
+			</tr>
+			<tr>
+		             <td>Rins</td>
+					 <td>Abacaxi</td>
+					<td> Fazer refeições exclusivas 3 vezes por semana(Desjejum ou ceia da tarde ou jantar)</td> 
+			</tr>
+			<tr>
+		             <td>Rins</td>
+					 <td>Coco</td>
+					<td>Agua de coco. Tomar 250 ml, 2 vezes ao dia</td> 
+			</tr>
+					<tr>
+		             <td>Rins</td>
+					 <td>Maca</td>
+					<td>Suco natural. Tomar 250 ml, 3 vezes ao dia</td> 
+			</tr>
+					<tr>
+		             <td>Rins</td>
+					 <td>Pera</td>
+					<td>Fazer refeições exclusivas 3 vezes por semana(substiituir desjejum ou ceia da tarde ou janta)</td> 
+			</tr>
+				<tr>
+		             <td>Rins</td>
+					 <td>Capim cidreira e mel de abelhas</td>
+					<td>Cha das folhas (30 g para 1 litro de agua). Tomar 5 xícaras ao dia, adoçado com mel de abelhas</td> 
+			   </tr>
+			   			<tr>
+		             <td>Rins</td>
+					 <td>Carqueja</td>
+					<td>Cha das folhas (30 g para 1 litro de agua). Tomar 5 xícaras ao dia</td> 
+			   </tr>
+				<tr>
+		             <td>Rins</td>
+					 <td>Cavalinho e mel de abelhas</td>
+					<td>Cha das folhas (30 g para 1 litro de agua). Tomar 5 xícaras ao dia, adoçado com mel de abelhas</td> 
+			   </tr>
+			   	<tr>
+		             <td>Rins</td>
+					 <td>Chapeu de couro e mel de abelhas</td>
+					<td>Cha das folhas (30 g para 1 litro de agua). Tomar 5 xícaras ao dia, adoçado com mel de abelhas</td> 
+			   </tr>
+			   	<tr>
+		             <td>Rins</td>
+					 <td>Erva doce(funcho) e mel de abelhas</td>
+					<td>Cha das folhas e sementes (30 g para 1 litro de agua). Tomar 5 xícaras ao dia, adoçado com mel de abelhas</td> 
+			   </tr>
+			   	<tr>
+		             <td>Rins</td>
+					 <td>Quebra pedra</td>
+					<td>Cha das folhas e raizes (50 g para 1 litro de agua). Tomar 5 xícaras ao dia.</td> 
+			   </tr>
+			   	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Alface</td>
+					<td>Cha ou suco dos talos(100 g para 1 litro de agua). Tomar 3 xícaras ao dia</td> 
+			   </tr>
+			    	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Berinjela</td>
+					<td>Cha (80 g para 1 litro de agua). Tomar 4 xícaras ao dia</td> 
+			   </tr>
+			    	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Beterraba e acucar mascavo</td>
+					<td>Cortar a beterraba em rodelas finas, cobrir com açúcar mascavo e deixar repousar durante 10 horas. Quando o xarope estiver pronto, tomar 3 colheres (sopa), 5 vezes ao dia</td> 
+			   </tr>
+				 	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Couve e mel de abelhas</td>
+					<td>Suco das folhas misturado com mel de abelhas. Cozinhar por 30 minutos. Tomar 3 colheres das de sopa, 4 vezes ao dia.</td> 
+			   </tr>
+			 	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Coco</td>
+					<td>Tomar 250 ml de água de coco, 4 vezes ao dia.</td> 
+			   </tr>
+			    	<tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Laranja</td>
+					<td>Fazer refeições exclusivas 4 vezes por semana.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>maca,mel de abelhas</td>
+					<td>Cha das folhas da macieira (80 g para 1 litro de água). Tomar 4 xícaras ao dia, adoçado com mel de abelhas.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Maracuja,mel de abelhas</td>
+					<td>Comer a polpa da fruta, adoçada com mel de abelhas. Suco diluído em água e adoçado com mel de abelhas.Tomar 250 ml, 4 vezes ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Tamarindo</td>
+					<td>Suco ou chá dos frutos (40 g para 1 litro de água). Tomar 3 xícaras, ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Arruda</td>
+					<td>Cha das folhas (10 g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Malva</td>
+					<td>Cha das folhas (20g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Cravo</td>
+					<td>Cha das flores (3 flores para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sistema nervoso(Calmantes)</td>
+					 <td>Poejo</td>
+					<td>Cha das folhas (30 g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Cebola</td>
+					<td>Lavar o local com o suco diluído em agua.</td> 
+			   </tr>	
+			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Cenoura</td>
+					<td>Fazer compressa local com cenoura crua, ralada.</td> 
+			   </tr>	
+			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Repolho</td>
+					<td>Fazer compressa local com repolho cru, macerado.</td> 
+			   </tr>
+			   			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Tomate</td>
+					<td>Fazer compressa local com tomate cru, macerado.</td> 
+			   </tr>
+			  <tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Banana</td>
+					<td>Aplicar nódoa de bananeira no local. Para obtê-la, faça um corte no tronco da bananeira e apare a seiva com a ajuda de um vasilhame.</td> 
+			   </tr>
+			  <tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Cajueiro</td>
+					<td>Lavar o local com chá das folhas do cajueiro.</td> 
+			   </tr> 
+			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Limao e sal</td>
+					<td>Fazer compressa local com suco de limão e sal.</td> 
+			   </tr>
+			<tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Maca</td>
+					<td>Fazer compressa local com polpa da maçã, ralada.</td> 
+			   </tr>
+		       <tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Alecrim,ou alfavaca, ou eucaplipto</td>
+					<td>Chá das folhas (60 g para 1 litro de água). Fazer compressa local.</td> 
+			   </tr>
+			   <tr>
+		             <td>Cicatrizante,cicatrizacao</td>
+					 <td>Saiao</td>
+					<td>Chá das folhas (40 g para 1 litro de água). Tomar 4 xicaras ao dia.Lavar o local com o sumo das folhas.</td> 
+			   </tr>
+			      <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Agriao</td>
+					<td>Suco diluido em agua tomar 2 xicaras por dia</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Alho</td>
+					<td>Amassar 3 dentes de alho e deixá-los de molho durante 6 horas. Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Cebola e limao</td>
+					<td>Suco diluído em água e combinado com limão. Tomar 2 xícaras ao dia</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Inhame azeite de oliva e sal</td>
+					<td>Utilizar nas refeições cozido em água e temperado com azeite de oliva e sal.ou Usar elixir de inhame</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Pepino</td>
+					<td>Suco diluído em água. Tomar 250 ml de manha, em jejum.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Salsa</td>
+					<td>Chá da raiz (30 g para 1 litro de água). Tomar 4 xícaras, ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Abacaxi ou laranja ou maca ou uva ou pera</td>
+					<td>Refeições exclusivas 3 vezes por semana (Substituir uma refeicao ou cafe da manha ou ceia da tarde ou janta)</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Limao</td>
+					<td>Cura do limao comer de 1 a 10 limoes em ordem de 1 a 10 e de 9 a 1</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Carqueja</td>
+					<td>Cha das folhas (40 g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Confrei</td>
+					<td>Cha das folhas (20 g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Chapeu de couro</td>
+					<td>Cha das folhas (20 g para 1 litro de água). Tomar 3 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Dente de leao</td>
+					<td>Cha das folhas (30 g para 1 litro de água). Tomar 4 xícaras ao dia., Suco diluído em água. Tomar 1 xícara, ao dia.,Utilizar em refeições na forma de saladas cruas</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Sabugueiro</td>
+					<td>Cha das folhas (30 g para 1 litro de água). Tomar 4 xícaras ao dia.</td> 
+			   </tr>
+			   <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Salsaparrilha</td>
+					<td>Cha das folhas (30 g para 1 litro de água). Tomar 4 xícaras ao dia.</td> 
+			   </tr>
+		       <tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Sucupira</td>
+					<td>Cha das raizes (20 g para 1 litro de água). Tomar 4 xícaras ao dia.</td> 
+			   </tr>
+			<tr>
+		             <td>Sangue, Purificar,Purificacao</td>
+					 <td>Tanchagem</td>
+					<td>Cha das folhas (30 g para 1 litro de água). Tomar 4 xícaras ao dia.</td> 
+			   </tr>  
+<script>
+$('input#txt_consulta').quicksearch('table#tabela tbody tr');
+</script>
+    </body>
+</html>
